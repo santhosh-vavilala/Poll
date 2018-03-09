@@ -22,8 +22,8 @@
         <label class="lbl" for="chabt"></label>
     
         <div class="moreoptions-content">
-            Kuvempu started his literary work in English, with a collection of poetry called Beginner's Muse but later switched to
-      his native Kannada.
+            <p>Kuvempu started his literary work in English, with a collection of poetry called Beginner's Muse but later switched to
+      his native Kannada.</p>
 
       <ion-grid>
         <ion-row>
@@ -41,46 +41,50 @@
         </ion-row>
       </ion-grid>
         
-          <ul>
-            <li>
-            <label>
-              <input type="checkbox" class="option-input checkbox" checked />
-              Checkbox
-            </label>
-            </li>
-             <li>
-            <label>
-              <input type="checkbox" class="option-input checkbox" />
-              Checkbox
-            </label>
-            </li>
-             <li>
-            <label>
-              <input type="checkbox" class="option-input checkbox" />
-              Checkbox
-            </label>
-             </li>
-          </ul>
-          <div class="radiooptions">
-            <li>
-            <label>
-              <input type="radio" class="option-input radio" name="example" checked />
-              Radio option
-            </label>
-            </li>
-             <li>
-            <label>
-              <input type="radio" class="option-input radio" name="example" />
-              Radio option
-            </label>
-            </li>
-             <li>
-            <label>
-              <input type="radio" class="option-input radio" name="example" />
-              Radio option
-            </label>
-             </li>
+
+        <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <div class="chk-container">
+              <h4>Custom Checkboxes</h4>
+
+              <label *ngFor = "let i of options" class="chkcontainer">{{i.value}}
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              
+             </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+              <div class="radio-container">
+                <h4>Custom Radio Buttons</h4>
+                <label class="container">One
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Two
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Three
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Four
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
           </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
           
         </div>
       </div>
