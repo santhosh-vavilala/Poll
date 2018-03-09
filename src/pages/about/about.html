@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3>Post your Opinion!</h3>
+    
+  <div class="content">
+    <form>
+      <label for="fname">Opinion</label>
+      <textarea rows="4" cols="50" id="fname" name="firstname" placeholder="Your opinion.."></textarea>
+
+      <label for="lname">More Information</label>
+      <textarea rows="4" cols="50" type="text" id="lname" name="lastname" placeholder="More information.."></textarea>
+      <div class="aboutcontainer moreoptions">
+        
+        <input class="inp" id="chabt" type="checkbox">
+        <label class="lbl" for="chabt"></label>
+    
+        <div class="moreoptions-content">
+            Kuvempu started his literary work in English, with a collection of poetry called Beginner's Muse but later switched to
+      his native Kannada.
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+          <select>
+          <option value="default">YES/NO</option>
+          <option value="radio">Can Choose One</option>
+          <option value="cjeckbox">Can Choose Many</option>
+        </select>
+        </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6><input type="text"></ion-col>
+           <ion-col col-6><input class="submit" type="submit" value="Add"></ion-col>
+        </ion-row>
+      </ion-grid>
+        
+          <ul>
+            <li>
+            <label>
+              <input type="checkbox" class="option-input checkbox" checked />
+              Checkbox
+            </label>
+            </li>
+             <li>
+            <label>
+              <input type="checkbox" class="option-input checkbox" />
+              Checkbox
+            </label>
+            </li>
+             <li>
+            <label>
+              <input type="checkbox" class="option-input checkbox" />
+              Checkbox
+            </label>
+             </li>
+          </ul>
+          <div class="radiooptions">
+            <li>
+            <label>
+              <input type="radio" class="option-input radio" name="example" checked />
+              Radio option
+            </label>
+            </li>
+             <li>
+            <label>
+              <input type="radio" class="option-input radio" name="example" />
+              Radio option
+            </label>
+            </li>
+             <li>
+            <label>
+              <input type="radio" class="option-input radio" name="example" />
+              Radio option
+            </label>
+             </li>
+          </div>
+          
+        </div>
+      </div>
+
+      <input class="submit submitmargin" type="submit" value="Submit">
+    </form>
+  </div>
+
+</ion-content>
