@@ -28,16 +28,16 @@
       <ion-grid>
         <ion-row>
           <ion-col col-12>
-          <select>
-          <option value="default">YES/NO</option>
+          <select [(ngModel)]="selectedTypeValue"  [ngModelOptions]="{standalone: true}">
+          <option value="default" selected="selected">YES/NO</option>
           <option value="radio">Can Choose One</option>
-          <option value="cjeckbox">Can Choose Many</option>
+          <option value="checkbox">Can Choose Many</option>
         </select>
         </ion-col>
         </ion-row>
-        <ion-row>
-          <ion-col col-6><input type="text"></ion-col>
-           <ion-col col-6><input class="submit" type="submit" value="Add"></ion-col>
+        <ion-row *ngIf="selectedTypeValue != 'default'">
+          <ion-col col-6><input type="text" [(ngModel)]="optionText" [ngModelOptions]="{standalone: true}"></ion-col>
+           <ion-col col-6><input class="submit" (click)='addItems(optionText)' type="submit" value="Add"></ion-col>
         </ion-row>
       </ion-grid>
         
@@ -45,8 +45,8 @@
         <ion-grid>
         <ion-row>
           <ion-col col-12>
-            <div class="chk-container">
-              <h4>Custom Checkboxes</h4>
+            <div class="chk-container"  *ngIf="selectedTypeValue == 'checkbox'">
+              <h4>Custom Checkboxes {{selectedTypeValue}}</h4>
 
               <label *ngFor = "let i of options" class="chkcontainer">{{i.value}}
                 <input type="checkbox" checked="checked">
@@ -62,22 +62,10 @@
       <ion-grid>
         <ion-row>
           <ion-col col-12>
-              <div class="radio-container">
+              <div class="radio-container"   *ngIf="selectedTypeValue == 'radio'">
                 <h4>Custom Radio Buttons</h4>
-                <label class="container">One
+                <label class="container" *ngFor = "let i of options" >{{i.value}}
                   <input type="radio" checked="checked" name="radio">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Two
-                  <input type="radio" name="radio">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Three
-                  <input type="radio" name="radio">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                  <input type="radio" name="radio">
                   <span class="checkmark"></span>
                 </label>
           </div>
