@@ -22,7 +22,7 @@ export class AboutPage {
     if (optionText != '' && optionText != undefined) {
       this.appService.Options.push({ id: 1, value: optionText });
       this.options = this.appService.Options;
-      this.optionText = '';
+      this.optionText = ''; 
     }
   }
 

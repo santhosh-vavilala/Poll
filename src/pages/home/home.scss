@@ -1,5 +1,39 @@
 page-home {
 
+    .textarea {
+        width: 100%;
+        padding: 10px 10px;
+        
+        display: inline-block;
+        border: 1px dashed #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+
+    .comments-heading{
+        margin-top: 5px !important;
+        color: #bcbbba;
+    }
+
+    .container{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .button-contianer{
+        position: absolute;
+        right: 10px;
+        a {
+            color: #488aff;
+            text-decoration: none;
+        }
+       
+    }
+
+    .comment-action{
+        margin-right: 5px;
+    }
+
 .user-image {
    padding: 5px;
    background:white;
@@ -10,7 +44,7 @@ page-home {
 .user-content {
    padding: 5px;
    background:white;
-   
+   vertical-align: top;
    display:table-cell;
    width:auto;
    color: #222;

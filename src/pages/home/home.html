@@ -17,7 +17,7 @@
     <h1 class='lightinset'>No</h1>
   </div>
 
-  <div class="results"><span><span class="result-value">4.2K</span> Voted for YES</span>
+  <div (click)="goToResultPage()" class="results"><span><span class="result-value">4.2K</span> Voted for YES</span>
   </div>
 
   <div class="container homepage">
@@ -48,12 +48,59 @@
   </div>
 
   <hr class="style-four">
+
+  <div class='container'>
+    <textarea class="textarea" rows="4" cols="50" id="fname" name="firstname" placeholder="Your comment.."></textarea>
+    <div class='button-contianer'>
+    <a href="#" class="comment-action" >POST</a> 
+    <a href="#">CANCEL</a>
+    </div>
+  </div>
+  
+
+
   <div class="comment-container">
     <div class="user-image">
-      <div class="user-icon"> <img src="user/user-xxl.png" alt=""> </div>
+      <div class="user-icon"> <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*JVrRuk_uHM6uiRJz8vA-Ug@2x.jpeg" alt=""> </div>
     </div>
     <div class="user-content">
-      <div class=""><span class="user-name">Santhosh Vavilala</span><span class="comment-dur">a few seconds ago</span></div>
+      <div class=""><span (click)="goToProfilePage()"  class="user-name">Santhosh Vavilala</span><span class="comment-dur">a few seconds ago</span></div>
+      <div class="user-text">The best choice is always to make use of a verified and appropriate wiring plan that’s presented from the reliable
+        source. A good, proven corporation that’s an extended history of delivering one of the most up-to -date wiring diagrams
+        accessible isn’t difficult to find. Infact, the services they supply are comparatively affordable compared to what
+        might happen if there is a bad schematic used. Many times, may perhaps move forward with the inappropriate information
+        in-hand over a fix career and a technician won’t have the time to confirm the accuracy of a wiring diagram. This
+        really is perhaps an extremely pricey and name harmful situation and certainly will be avoided by putting your trust
+        using proven online resource and a respected for images and automotive repair information. Many times, may perhaps
+        move forward with the inappropriate information in-hand over a fix career and a technician won’t have the time to
+        confirm the accuracy of a wiring diagram. This really is perhaps an extremely pricey and name harmful situation and
+        certainly will be avoided by putting your trust using proven online resource and a respected for images and automotive
+        repair information.
+      </div>
+      <div><span class="upvote-arrow">&#8593; </span><span class="upvote">998</span>
+        <span class="upvote-arrow">&#8595; </span><span class="upvote">99</span>
+        <span><a class="reply-comment" href="#">reply</a></span>
+        <span><a class="reply-comment" href="#">edit</a></span></div>
+
+        <div class='container'>
+          <textarea class="textarea" rows="4" cols="50" id="fname" name="firstname" placeholder="Your comment.."></textarea>
+          <div class='button-contianer'>
+          <a href="#" class="comment-action" >POST</a> 
+          <a href="#">CANCEL</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+
+  <div class="comment-container">
+  
+    <div class="user-image">
+      <div class="user-icon"> <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*JVrRuk_uHM6uiRJz8vA-Ug@2x.jpeg" alt=""> </div>
+    </div>
+    <div class="user-content">
+      <div class=""><span (click)="goToProfilePage()"  class="user-name">Santhosh Vavilala</span><span class="comment-dur">a few seconds ago</span></div>
       <div class="user-text">The best choice is always to make use of a verified and appropriate wiring plan that’s presented from the reliable
         source. A good, proven corporation that’s an extended history of delivering one of the most up-to -date wiring diagrams
         accessible isn’t difficult to find. Infact, the services they supply are comparatively affordable compared to what
@@ -73,39 +120,14 @@
     </div>
   </div>
 
+
+
   <div class="comment-container">
     <div class="user-image">
       <div class="user-icon"> <img src="user/user-xxl.png" alt=""> </div>
     </div>
     <div class="user-content">
       <div class=""><span class="user-name">Santhosh Vavilala</span><span class="comment-dur">a few seconds ago</span></div>
-      <div class="user-text">The best choice is always to make use of a verified and appropriate wiring plan that’s presented from the reliable
-        source. A good, proven corporation that’s an extended history of delivering one of the most up-to -date wiring diagrams
-        accessible isn’t difficult to find. Infact, the services they supply are comparatively affordable compared to what
-        might happen if there is a bad schematic used. Many times, may perhaps move forward with the inappropriate information
-        in-hand over a fix career and a technician won’t have the time to confirm the accuracy of a wiring diagram. This
-        really is perhaps an extremely pricey and name harmful situation and certainly will be avoided by putting your trust
-        using proven online resource and a respected for images and automotive repair information. Many times, may perhaps
-        move forward with the inappropriate information in-hand over a fix career and a technician won’t have the time to
-        confirm the accuracy of a wiring diagram. This really is perhaps an extremely pricey and name harmful situation and
-        certainly will be avoided by putting your trust using proven online resource and a respected for images and automotive
-        repair information.
-      </div>
-      <div><span class="upvote-arrow">&#8593; </span><span class="upvote">998</span>
-        <span class="upvote-arrow">&#8595; </span><span class="upvote">99</span>
-        <span><a class="reply-comment" href="#">reply</a></span>
-        <span><a class="reply-comment" href="#">edit</a></span></div>
-    </div>
-  </div>
-
-
-
-  <div class="comment-container">
-    <div class="user-image">
-      <div class="user-icon"> <img src="user/user-xxl.png" alt=""> </div>
-    </div>
-    <div class="user-content">
-      <div class=""><span class="user-name">Santhosh Vavilala > Swapna Vavilala</span><span class="comment-dur">a few seconds ago</span></div>
       <div class="user-text">The best choice is always to make use of a verified and appropriate wiring plan that’s presented from the reliable
         source. 
       </div>

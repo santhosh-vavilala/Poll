@@ -1,33 +1,16 @@
 
 h2, h3, h4{
-    color: #369FFC;
-    margin: 10px 5px;
-}
-page-about {
-.content{
-    padding: 5px;
-}
-label{
     color: grey;
-}
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    margin: 10px 10px;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px dashed #ccc;
-    border-radius: 2px;
-    box-sizing: border-box;
+h1{
+    color: grey;
+}
+
+a{
+    color: #369FFC;
+    text-decoration: none;
 }
 
 .submit {
@@ -40,6 +23,36 @@ textarea {
     cursor: pointer;
     margin: 8px 0;
 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+page-about {
+.content{
+    padding: 5px;
+}
+label{
+    color: grey;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px dashed #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+
 
 .submitmargin{
     margin: 40px 0 20px 0;

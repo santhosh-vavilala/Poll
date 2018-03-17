@@ -1,4 +1,18 @@
 page-contact {
+
+    .follow-icon{
+        
+        float: right;
+        .svgIcon {
+            vertical-align: middle;
+            fill: rgba(0,0,0,.54);
+        }
+
+        .svgIcon-following {
+            vertical-align: middle;
+            fill: #369FFC;
+        }
+    }
     .scroll-content{
         background-color: #f9f9f9;
     }

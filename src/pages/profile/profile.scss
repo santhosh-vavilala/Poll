@@ -1,0 +1,21 @@
+page-profile {
+    .avatar-image {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .avatar-box{
+        text-align: center;
+    }
+
+    .follow-info{
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+}
