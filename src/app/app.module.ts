@@ -14,6 +14,8 @@ import { SearchPage } from '../pages/search/search';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { HomeComponent } from '../home/home.component';
+import { AuthService } from '../auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailsPage,
     ProfilePage,
     SearchPage,
-    TabsPage
+    TabsPage,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -39,9 +42,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailsPage,
     ProfilePage,
     SearchPage,
-    TabsPage
+    TabsPage,
+    HomeComponent
   ],
   providers: [
+    AuthService,
     AppService,
     StatusBar,
     SplashScreen,
