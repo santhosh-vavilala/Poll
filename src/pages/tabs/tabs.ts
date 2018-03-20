@@ -6,6 +6,7 @@ import { SearchPage } from '../search/search';
 import { ProfilePage } from '../profile/profile';
 import { NavController } from 'ionic-angular';
 import { HomeComponent } from '../../home/home.component';
+import { AuthService } from '../../auth/auth.service';
 
 
 @Component({
@@ -18,7 +19,12 @@ export class TabsPage {
   tab3Root = ContactPage;
   tab4Root = SearchPage;
 
-  constructor(public navCtrl: NavController) {
-    navCtrl.push(HomeComponent)
+  constructor(public auth: AuthService, public navCtrl: NavController) {
+    console.log('from tab component1')
+    if(!auth.isAuthenticated())
+    {
+      this.navCtrl.push(HomeComponent);
+    }
+    console.log('from tab component2')
   }
 }

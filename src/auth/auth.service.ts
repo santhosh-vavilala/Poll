@@ -21,20 +21,20 @@ export class AuthService {
     this.auth0.authorize();
   }
 
-  public handleAuthentication(): void {
-    this.auth0.parseHash((err, authResult) => {
-      if (authResult && authResult.accessToken && authResult.idToken) {
-        this.setSession(authResult);
-        //this.navCtrl.push(HomeComponent);
-      } else if (err) {
-        //this.navCtrl.push(HomeComponent);
-        console.log(err);
-        alert(`Error: ${err.error}. Check the console for further details.`);
-      }
-    });
-  }
+  // public handleAuthentication(): void {
+  //   this.auth0.parseHash((err, authResult) => {
+  //     if (authResult && authResult.accessToken && authResult.idToken) {
+  //       this.setSession(authResult);
+  //       //this.navCtrl.push(HomeComponent);
+  //     } else if (err) {
+  //       //this.navCtrl.push(HomeComponent);
+  //       console.log(err);
+  //       alert(`Error: ${err.error}. Check the console for further details.`);
+  //     }
+  //   });
+  // }
 
-  private setSession(authResult): void {
+  public setSession(authResult): void {
     // Set the time that the access token will expire at
     const expiresAt = JSON.stringify((authResult.expiresIn * 1000) + new Date().getTime());
     localStorage.setItem('access_token', authResult.accessToken);
